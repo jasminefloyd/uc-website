@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Name</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("YOUR_USER_ID"); // Replace 'YOUR_USER_ID' with your actual user ID from EmailJS
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Restaurant Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#concept">Concept</a></li>
+                <li><a href="#owners">Owners</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <img src="./assets/image placeholder.png" alt="Restaurant Image" class="hero-image">
+    </section>
+
+    <section id="concept">
+        <h2>Concept</h2>
+        <p>Our restaurant offers a unique dining experience with a focus on fresh, locally sourced ingredients and innovative cuisine.</p>
+    </section>
+
+    <section id="owners">
+        <h2>Owners</h2>
+        <div class="owner">
+            <img src="./assets/Female Placeholder - Headshot.png" alt="Owner 1" class="owner-image">
+            <p>Owner 1 - Bio goes here.</p>
+        </div>
+        <div class="owner">
+            <img src="./assets/Female Placeholder - Headshot.png" alt="Owner 2" class="owner-image">
+            <p>Owner 2 - Bio goes here.</p>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <ul class="menu-list">
+            <li>
+                <img src="./assets/img1.jpg" alt="Grilled Chicken Salad" class="menu-thumbnail">
+                Grilled Chicken Salad - $12
+            </li>
+            <li>
+                <img src="./assets/img1.jpg" alt="Seared Salmon" class="menu-thumbnail">
+                Seared Salmon - $15
+            </li>
+            <li>
+                <img src="./assets/img1.jpg" alt="Vegetable Stir-fry" class="menu-thumbnail">
+                Vegetable Stir-fry - $10
+            </li>
+            <li>
+                <img src="./assets/img1.jpg" alt="Chocolate Lava Cake" class="menu-thumbnail">
+                Chocolate Lava Cake - $8
+            </li>
+        </ul>
+        <button class="order-now">Order Now</button>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Restaurant Name. All rights reserved.</p>
+    </footer>
+
+    <div class="fds-footer">
+        <p class="tagline">🏆 Greatness Magnified - An FDS Lifestyle</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

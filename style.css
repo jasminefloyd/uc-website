@@ -1,0 +1,189 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+#hero {
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 4em 2em;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #222;
+}
+
+.owner {
+    display: inline-block;
+    width: 45%;
+    margin: 2% 2.5%;
+}
+
+.owner img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.menu-thumbnail {
+    width: 80px;
+    height: 80px;
+    margin-right: 1em;
+    border-radius: 10px;
+}
+
+.order-now {
+    padding: 1em 2em;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.order-now:hover {
+    background-color: #e5533d;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin: 0.5em 0 0.2em 0;
+}
+
+form input, form textarea {
+    margin-bottom: 1em;
+    padding: 0.8em;
+    width: 80%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    padding: 0.8em 2em;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #e5533d;
+}
+
+#formMessage {
+    margin-top: 1em;
+    color: green;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 1em 0;
+    }
+
+    form input, form textarea {
+        width: 95%;
+    }
+}
+
+
+.fds-footer {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    justify-content: center;
+}
+
+.tagline {
+    padding: 10px;
+    color: #e4e4e4;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+}
