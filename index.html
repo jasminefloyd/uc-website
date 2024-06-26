@@ -14,80 +14,99 @@
     </script>
 </head>
 <body>
-    <header>
-        <h1>University Chicken</h1>
-        <nav>
-            <ul>
-                <li><a href="#concept">About Us</a></li>
-                <li><a href="#owners">Owners</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="./assets/logo1.jpg" alt="Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Meet the Chefs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="mobile-nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <section id="hero">
-        <img src="./assets/logo1.jpg" alt="Restaurant Image" class="hero-image">
-    </section>
+    <!-- Main Section -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to University Chicken</h1>
+                <p>Tagline or description goes here.</p>
+                <button class="cta-button">Learn More</button>
+            </div>
+        </section>
 
-    <section id="concept">
-        <h2>Concept</h2>
-        <p>Our restaurant offers a unique dining experience with a focus on fresh, locally sourced ingredients and innovative cuisine.</p>
-    </section>
+        <!-- Services Section -->
+        <section class="services">
+            <div class="container">
+                <h2>Our Menu</h2>
+                <div class="service-item">
+                    <img src="./assets/img2.jpg" alt="Service 1">
+                    <h3>Menu Item 1</h3>
+                    <p>Description of item 1.</p>
+                </div>
+                <div class="service-item">
+                    <img src="./assets/img2.jpg" alt="Service 2">
+                    <h3>Menu Item 2</h3>
+                    <p>Description of item 2.</p>
+                </div>
+                <div class="service-item">
+                    <img src="./assets/img3.jpg" alt="Service 3">
+                    <h3>Service 3</h3>
+                    <p>Description of item 3.</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="owners">
-        <h2>Owners</h2>
-        <div class="owner">
-            <img src="./assets/ph2.png" alt="Owner 1" class="owner-image">
-            <p>Owner 1 - Bio goes here.</p>
+        <!-- Portfolio Section -->
+        <section class="portfolio">
+            <div class="container">
+                <h2>Meet the Chefs</h2>
+                <div class="portfolio-item">
+                    <img src="./assets/ph2.png" alt="Portfolio 1">
+                    <h3>Desmond Short</h3>
+                    <p>Some text about the chef</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="./assets/ph2.png" alt="Portfolio 2">
+                    <h3>Leandra Edwards</h3>
+                    <p>Some text about the chef</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 University Chicken. All rights reserved.</p>
         </div>
-        <div class="owner">
-            <img src="./assets/ph2.png" alt="Owner 2" class="owner-image">
-            <p>Owner 2 - Bio goes here.</p>
-        </div>
-    </section>
-
-    <section id="menu">
-        <h2>Menu</h2>
-        <ul class="menu-list">
-            <li>
-                <img src="./assets/img3.jpg" alt="Grilled Chicken Salad" class="menu-thumbnail">
-                Grilled Chicken Salad - $12
-            </li>
-            <li>
-                <img src="./assets/img2.jpg" alt="Seared Salmon" class="menu-thumbnail">
-                Seared Salmon - $15
-            </li>
-            <li>
-                <img src="./assets/img3.jpg" alt="Vegetable Stir-fry" class="menu-thumbnail">
-                Vegetable Stir-fry - $10
-            </li>
-            <li>
-                <img src="./assets/img2.jpg" alt="Chocolate Lava Cake" class="menu-thumbnail">
-                Chocolate Lava Cake - $8
-            </li>
-        </ul>
-        <button class="order-now">Order Now</button>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <p id="formMessage"></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 University Chicken. All rights reserved.</p>
     </footer>
-
     <div class="fds-footer">
         <p class="tagline">🏆 Greatness Magnified - An FDS Lifestyle</p>
     </div>
@@ -95,4 +114,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
