@@ -56,7 +56,8 @@ nav ul li a:hover {
 }
 
 .logo img {
-    height: 150px;
+    height: 100px;
+    padding: 10px;;
 }
 
 .mobile-nav-toggle {
