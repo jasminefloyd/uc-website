@@ -407,6 +407,15 @@ footer {
         width: 60%;
     }
 
+    .carousel {
+        max-width: 80%;
+    }
+
+    .carousel-button {
+        padding: .8rem;
+        font-size: .8rem;
+    }
+
     .contact form {
         padding: 3rem;
     }
