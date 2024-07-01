@@ -5,28 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Chicken</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" />
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        (function() {
-            emailjs.init("YOUR_USER_ID"); // Replace 'YOUR_USER_ID' with your actual user ID from EmailJS
-        })();
-    </script>
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <img src="./assets/logo1.jpg" alt="Logo">
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Meet the Chefs</a></li>
-                    <li><a href="#">Contact</a></li>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#"><img src="./assets/logo1.jpg" alt="University Chicken Logo"></a>
+            </div>
+            <nav>
+                <ul class="">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="mobile-nav-toggle">
                     <span></span>
@@ -37,49 +28,24 @@
         </div>
     </header>
 
-    <!-- Main Section -->
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <h1>Welcome to University Chicken</h1>
-                <button class="cta-button">Contact Us / Order Now</button>
-            </div>
-        </section>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to University Chicken</h1>
+            <p>The Best Chicken You'll Ever Have!</p>
+            <a href="#" class="cta-button" id="view-menu-button">View Menu</a>
+        </div>
+    </section>
 
-
-
-        <!-- Services Section -->
-        <section class="services">
-            <div class="container">
-                <p>We are the BEST chicken sandwich company, period - because we have the BEST people, period.</p>
-                <h2>Our Menu</h2>
-                <div class="service-item">
-                    <img src="./assets/sando1.jpg" alt="Service 1">
-                    <h3>Menu Item 1</h3>
-                    <p>Description of item 1.</p>
-                </div>
-                <div class="service-item">
-                    <img src="./assets/sando1.jpg" alt="Service 2">
-                    <h3>Menu Item 2</h3>
-                    <p>Description of item 2.</p>
-                </div>
-                <div class="service-item">
-                    <img src="./assets/sando2.jpg" alt="Service 3">
-                    <h3>Service 3</h3>
-                    <p>Description of item 3.</p>
-                </div>
-            </div>
-        </section>
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>University Chicken was born out of an earnest desire to help HBCU students find a quick, affordable meal that feels like a warm hug. Everyone can relate to hunger, and no one should face food insecurity. Every sandwich helps our community by bringing education, awareness, and opportunity through the power of food. By employing local college students, University Chicken fosters independence and trust in every student, parent, faculty member, and guest we graciously serve.</p>
+        <blockquote>
+            "If you want to go fast, go alone. If you want to go far, go together." - African Proverb
+        </blockquote>
 
         <!-- Portfolio Section -->
         <section class="portfolio">
             <div class="container">
-                <h2>Meet the Chefs</h2>
-                <p>University Chicken was born out of an earnest desire to help HBCU students find a quick, affordable meal that tastes how a warm hug feels.
-                    Everyone can relate to hunger, and no one should face food insecurity. Every sandwich helps our community bring education, awareness, and opportunity through the power of food.
-                    By employing local college students, University Chicken fosters independence and trust in every student, parent, faculty member, and guest we graciously serve. <br> <br> Contributing a percentage of sales annually with our non profit partner partner True Blue 1881, strengthening our bonds, commitment, and sincerity to being the change we want to see.
-                    </p>
                 <div class="portfolio-item">
                     <img src="./assets/ph2.png" alt="Portfolio 1">
                     <h3>Desmond Short</h3>
@@ -93,32 +59,68 @@
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section class="contact">
-            <div class="container">
-                <h2>Contact Us</h2>
-                <form>
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
+        <div class="testimonials">
+            <h3>What Our Clients Say</h3>
+            <div class="testimonial-item">
+                <img src="./assets/image4.jpeg" alt="Guest 1">
+                <p>"University Chicken provides exceptional service and delicious food!" - Guest 1</p>
             </div>
-        </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 University Chicken. All rights reserved.</p>
+            <div class="testimonial-item">
+                <video controls>
+                    <source src="./assets/Video.mov" type="video/mov">
+                    Your browser does not support the video tag.
+                </video>
+                <p>"The best chicken sandwich I've ever had!" - Guest 2</p>
+            </div>
         </div>
+    </section>
+
+    <section class="services" id="menu">
+        <h2>Our Menu</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <img src="./assets/sando1.jpg" alt="The UC Sando">
+                <h3>The UC Sando</h3>
+                <p>Crispy, golden fillet paired with pickles and creamy spicy sauce, all nestled in a soft, buttery brioche bun.</p>
+            </div>
+            <div class="service-item">
+                <img src="./assets/sando1.jpg" alt="The UC Sando">
+                <h3>The UC Sando</h3>
+                <p>Crispy, golden fillet paired with pickles and creamy spicy sauce, all nestled in a soft, buttery brioche bun.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form id="formbox" action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email">
+            <textarea name="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 University Chicken. All rights reserved.</p>
     </footer>
-    <div class="fds-footer">
-        <p class="tagline">🏆 Greatness Magnified - An FDS Lifestyle</p>
+
+    <div id="menu-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <div class="popup-menu-item">
+                <img src="./assets/sando1.jpg" alt="The UC Sando">
+                <h3>The UC Sando</h3>
+                <p>Crispy, golden fillet paired with pickles and creamy spicy sauce, all nestled in a soft, buttery brioche bun.</p>
+            </div>
+            <div class="popup-menu-item">
+                <img src="./assets/sando1.jpg" alt="The UC Sando">
+                <h3>The UC Sando</h3>
+                <p>Crispy, golden fillet paired with pickles and creamy spicy sauce, all nestled in a soft, buttery brioche bun.</p>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
