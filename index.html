@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>University Chicken</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -32,31 +35,43 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <h1>Welcome to University Chicken</h1>
-            <p>The Best Chicken You'll Ever Have!</p>
+            <p>The <span class="hero-span">Best</span> chicken sandwich <span class="hero-span">period</span></p>
             <a href="#" class="cta-button" id="view-menu-button">View Menu</a>
         </div>
     </section>
 
     <section class="about" id="about">
         <h2>About Us</h2>
-        <p>University Chicken was born out of an earnest desire to help HBCU students find a quick, affordable meal that feels like a warm hug. Everyone can relate to hunger, and no one should face food insecurity. Every sandwich helps our community by bringing education, awareness, and opportunity through the power of food. By employing local college students, University Chicken fosters independence and trust in every student, parent, faculty member, and guest we graciously serve.</p>
+        <p>
+            University Chicken was born out of an earnest desire to help 
+            students find a quick, affordable meal that tastes how a warm hug feels.
+        </p>
+        <p>
+            Each sandwich helps our community bring education, awareness to food insecurity, 
+            and create opportunity through the power of food.
+        </p>
+        <p>     
+            By employing local college students University Chicken fosters independence 
+            by building trust in every student, parent, faculty member, and guest we graciously 
+            serve. Contributing a percentage of annual sales to local non profits strengthens our bonds, 
+            commitment, and sincerity to being the change we want to see. Purpose and passion drive everything we do.
+        </p>
+
         <blockquote>
             "If you want to go fast, go alone. If you want to go far, go together." - African Proverb
         </blockquote>
 
         <!-- Portfolio Section -->
         <section class="portfolio">
-            <div class="container">
-                <div class="portfolio-item">
-                    <img src="./assets/ph2.png" alt="Portfolio 1">
-                    <h3>Desmond Short</h3>
-                    <p>Some text about the chef</p>
-                </div>
-                <div class="portfolio-item">
-                    <img src="./assets/lee_profile.jpg" alt="Portfolio 2">
-                    <h3>Leandra Edwards</h3>
-                    <p>Some text about the chef</p>
-                </div>
+            <div class="portfolio-item">
+                <img id="des" src="./assets/des.jpg" alt="Portfolio 1">
+                <h3>Desmond Short</h3>
+                <p>Some text about the chef</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="./assets/lee_profile.jpg" alt="Portfolio 2">
+                <h3>Leandra Edwards</h3>
+                <p>Some text about the chef</p>
             </div>
         </section>
 
@@ -87,17 +102,17 @@
     </section>
 
     <section class="services" id="menu">
-        <h2>Our Menu</h2>
+        <h2>Menu Highlights</h2>
         <div class="service-list">
             <div class="service-item">
-                <img src="./assets/sando1.jpg" alt="The UC Sando">
-                <h3>The UC Sando</h3>
-                <p>Crispy, golden fillet paired with pickles and creamy spicy sauce, all nestled in a soft, buttery brioche bun.</p>
+                <img src="./assets/sando1.jpg" alt="Chicken Sammy">
+                <h3>Chicken Sammy</h3>
+                <p>48 hour brine, C Sauce, House pickles, potato roll.</p>
             </div>
             <div class="service-item">
-                <img src="./assets/sando1.jpg" alt="The UC Sando">
-                <h3>The UC Sando</h3>
-                <p>Crispy, golden fillet paired with pickles and creamy spicy sauce, all nestled in a soft, buttery brioche bun.</p>
+                <img src="./assets/fries.JPG" alt="Texas Swindler Fries">
+                <h3>Texas Swindler Fries</h3>
+                <p>Garlic oil, Parmesan, C Sauce or Roasted Garlic Ranch for dipping.</p>
             </div>
         </div>
     </section>
@@ -119,15 +134,38 @@
     <div id="menu-popup" class="popup">
         <div class="popup-content">
             <span class="close-button">&times;</span>
+            <h2>Mains</h2>
             <div class="popup-menu-item">
                 <img src="./assets/sando1.jpg" alt="The UC Sando">
-                <h3>The UC Sando</h3>
-                <p>Crispy, golden fillet paired with pickles and creamy spicy sauce, all nestled in a soft, buttery brioche bun.</p>
+                <h3>Chicken Sammy</h3>
+                <p>48 hour brine, C Sauce, House pickles, potato roll.</p>
+            </div>
+            <div class="popup-menu-item">
+                <img src="./assets/fries.JPG" alt="The UC Sando">
+                <h3>Texas Swindler Fries</h3>
+                <p>Garlic oil, Parmesan, C Sauce or Roasted Garlic Ranch for dipping.</p>
+            </div>
+            <div class="popup-menu-item">
+                <img src="./assets/sando1.jpg" alt="Chicken Fingers">
+                <h3>Chicken Fingers</h3>
+                <p>Crispy, golden premium fried tenders, choice of sauce.</p>
+            </div>
+            <h2>Sauces</h2>
+            <div class="popup-menu-item">
+                <img src="./assets/sando1.jpg" alt="The UC Sando">
+                <h3>C Sauce</h3>
+                <p>Tomato Jam, Japanese mayo, white balsamic.</p>
             </div>
             <div class="popup-menu-item">
                 <img src="./assets/sando1.jpg" alt="The UC Sando">
-                <h3>The UC Sando</h3>
-                <p>Crispy, golden fillet paired with pickles and creamy spicy sauce, all nestled in a soft, buttery brioche bun.</p>
+                <h3>Roasted Garlic Ranch</h3>
+                <p>Buttermilk, roasted garlic, herbs.</p>
+            </div>
+            <h2>Desserts</h2>
+            <div class="popup-menu-item">
+                <img src="./assets/sando1.jpg" alt="The UC Sando">
+                <h3>Chocolate Chip Cookie</h3>
+                <p>Freshly baked, soft, and chewy cookies loaded with rich chocolate chips.</p>
             </div>
         </div>
     </div>

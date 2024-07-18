@@ -1,5 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -57,7 +58,7 @@ nav ul li a:hover {
 
 .logo img {
     height: 100px;
-    padding: 10px;;
+    padding: 10px;
 }
 
 .mobile-nav-toggle {
@@ -72,8 +73,6 @@ nav ul li a:hover {
     margin: 5px;
     background: #e64a19;
 }
-
-
 
 .hero {
     background: url('./assets/hero3.png') no-repeat center center/cover;
@@ -116,6 +115,11 @@ nav ul li a:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
+.hero-span {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
 .cta-button {
     background: #ff5722;
     color: #fff;
@@ -145,25 +149,28 @@ section {
     color: #757575;
 }
 
-
 /* Portfolio Section */
 .portfolio {
     padding: 50px 0;
-}
-
-.portfolio .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
     text-align: center;
 }
 
 .portfolio-item {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width: 30%;
     margin: 20px 1.5%;
+    align-items: center; /* Centers the items horizontally */
 }
 
 .portfolio-item img {
-    width: 100%;
-    height: auto;
+    height: 15em;
+    width: 15em; /* Ensure both height and width are the same for consistency */
+    border-radius: 50%; /* This will make the image circular */
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
 }
 
 .testimonials {
@@ -229,8 +236,6 @@ section {
     right: 10px;
 }
 
-
-
 .services {
     width: 90%;
     margin: 0 auto;
@@ -238,20 +243,23 @@ section {
 
 .service-list {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    justify-content: space-around; /* Evenly space items */
 }
 
 .service-item {
-    width: 100%;
+    flex: 1 1 calc(33.333% - 20px); /* Responsive width with some margin */
     max-width: 400px;
     text-align: center;
-    margin-bottom: 2rem;
+    margin: 10px; /* Ensure consistent margin */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .service-item img {
     width: 100%;
+    height: auto;
     border-radius: 8px;
+    object-fit: cover; /* Ensure the image covers the entire area without distortion */
 }
 
 .contact {
@@ -300,6 +308,7 @@ footer {
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    overflow: auto; /* Enable scrolling */
 }
 
 .popup-content {
@@ -308,6 +317,8 @@ footer {
     border-radius: 8px;
     width: 90%;
     max-width: 600px;
+    max-height: 90vh; /* Ensure it doesn't exceed viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
     text-align: center;
     position: relative;
 }
@@ -340,7 +351,6 @@ footer {
         flex-direction: column;
     }
 
-
     .navbar ul {
         flex-direction: column;
         display: none;
@@ -357,6 +367,7 @@ footer {
     .service-item {
         width: 100%;
         margin: 10px 0;
+        padding-right: 5px;
     }
 
     .hero {
@@ -424,6 +435,4 @@ footer {
         font-size: 1.1rem;
         padding: 1rem;
     }
-    
-    
 }
